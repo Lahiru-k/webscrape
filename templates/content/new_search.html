@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <form class="" action="/new_search" method="post">
+            {% csrf_token %}
+            <div class="input-field">
+                <input type="text" id="search" class="">
+                <label for="search">Search</label>
+            </div>
+            <button type="button" id="submit" class="btn waves-effect waves-light"><i class="material-icons medium">search</i></button>
+        </form>
+
+{% endblock %}
